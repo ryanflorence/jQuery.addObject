@@ -78,4 +78,4 @@ Then pop open Test/index.html
 
 ---
 
-This chunk of code is [moo4q](http://moo4q.com)'s twin sister.  They both do the same thing, interact with JavaScript objects through jQuery's simple API; moo4q just get's 14k of the rockin' MooTools inheritance API and language extensions as well.
+This chunk of code is [moo4q](http://moo4q.com)'s twin sister.  They both do the same thing, interact with JavaScript objects through jQuery's simple API; moo4q just gets 14k of the rockin' MooTools inheritance API and language extensions as well.
