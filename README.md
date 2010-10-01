@@ -27,26 +27,26 @@ This method allows you to add a JavaScript constructor to the jQuery, and then m
 
     };
     
-    jQuery.addObject('myObject', MyObject);
+    jQuery.addObject('myNameSpace', MyObject);
 
 Now you can use your object like this:
 
 ### Create an instance
 
     // Create an instance stored on #element
-    $('#element').myObject({
+    $('#element').myNameSpace({
       one: 'one',
       two: 'two'
     });
 
 ### Get properties
 
-    $('#element').myObject('foo'); // => 'bar'
+    $('#element').myNameSpace('foo'); // => 'bar'
 
 ### Set properties
 
-    $('#element').myObject('foo', 'baz');
-    $('#element').myObject('foo'); // => 'baz'
+    $('#element').myNameSpace('foo', 'baz');
+    $('#element').myNameSpace('foo'); // => 'baz'
 
 ### Call methods
 
@@ -56,13 +56,13 @@ Now you can use your object like this:
 
 If the method returns `this`, then through the jQuery API it will return the jQuery.
 
-    $('#element').myObject('returnThis').css().myObject('foo', 'bar').fadeOut();
+    $('#element').myNameSpace('returnThis').css().myNameSpace('foo', 'bar').fadeOut();
 
 ### Get the object out of the jQuery API
 
-    var instance = $('#element').myObject(); // called with no args, after already instantiated, returns the instance
+    var instance = $('#element').myNameSpace(); // called with no args, after already instantiated, returns the instance
     // or just get it from the data
-    var instance = $('#element').data('myObject');
+    var instance = $('#element').data('myNameSpace');
     instance.addArgs(1,1,1); // => 3
     instance.returnThis().foo; // => 'baz'
 
