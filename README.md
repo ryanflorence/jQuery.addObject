@@ -66,6 +66,15 @@ If object method returns `this`, then through the jQuery API it will return the 
     instance.addArgs(1,1,1); // => 3
     instance.returnThis().foo; // => 'baz'
 
+Running the tests
+-----------------
+
+QUnit is a submodule of this repo.  Run it as follows:
+
+    git submodule init
+    git submodule update
+
+Then pop open Test/index.html
 
 ---
 
