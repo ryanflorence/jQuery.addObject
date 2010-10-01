@@ -54,7 +54,7 @@ Now you can use your object like this:
 
 ### Chain
 
-If object method returns `this`, then through the jQuery API it will return the jQuery.
+If the method returns `this`, then through the jQuery API it will return the jQuery.
 
     $('#element').myObject('returnThis').css().myObject('foo', 'bar').fadeOut();
 
