@@ -15,15 +15,15 @@ This method allows you to add a JavaScript constructor to the jQuery, and then m
         two: 2
       },
 
-    	foo: 'bar',
+      foo: 'bar',
 
-    	addArgs: function(arg, arg2, arg3){
-    		return arg + arg2 + arg3;
-    	},
+      addArgs: function(arg, arg2, arg3){
+        return arg + arg2 + arg3;
+      },
 
-    	returnThis: function(){
-    		return this;
-    	}
+      returnThis: function(){
+        return this;
+      }
 
     };
     
