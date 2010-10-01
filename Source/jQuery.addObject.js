@@ -1,3 +1,12 @@
+/*
+ * jQuery.addObject
+ * 
+ * http://github.com/rpflorence/jQuery.addObject
+ *
+ * Copyright (c) 2010 Ryan Florence
+ * Dual licensed under the MIT and GPL licenses.
+ */
+
 jQuery.addObject = function(name, object){
 	jQuery.fn[name] = function(arg){
 		var instance = this.data(name);
